@@ -1,0 +1,11 @@
+- key: SetGridCellCount
+  count: 1
+- key: ThreadCount
+  nthreads: 3
+- key: LoadDatabase
+  database: phreeqc.dat
+- key: RunFile
+  workers: true
+  initial_phreeqc: true
+  utility: true
+  chemistry_name: advect.pqi

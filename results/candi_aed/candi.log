@@ -1,0 +1,177 @@
+     =============================================
+         Results from Corg-mass conservation check
+ Flux in (fg0+fg1+fg2) :         0.0000000000
+ Flux out (burial)     :        27.8076415817
+ Flux through reac     :     18288.6209655852
+ O2-POC-flux           :        43.0745888173
+ NO-POC-flux           :         0.0001824875
+ Mn-POC-flux           :         0.0397949454
+ Fe-POC-flux           :       463.2823188615
+ SO-POC-flux           :     16983.6395165014
+ CH-POC-flux           :       798.5845639722
+ Corgrate              :     18302.6583482825
+     =============================================
+   Definition of the fluxes: out of sediment (-) into it (+)
+      Units: [umol/cm2/y]
+   Flux O2         :      218.4383732680
+   Flux O2 Theory  :      273.2752346128
+   Flux NO3        :       -0.0000002640
+   Flux SO4        :       70.3895668864
+   Flux PO4        :      -20.9867919742
+   Flux PO4 Theory :     -172.6665881913
+   Flux NH4        :     -594.0813924726
+   Flux MnII       :       -2.8588921283
+   Flux FeII       :      -56.9075510516
+   Flux CH4        :       -0.3441467051
+     =============================================
+     Fluxes at the bottom:                        
+   Flux O2         :        0.0000000000
+   Flux NO3        :        0.0000000000
+   Flux SO4        :      -13.4565619852
+   Flux PO4        :       -0.4162468465
+   Flux NH4        :      -13.0691287506
+   Flux MnII       :       -0.0921104634
+   Flux FeII       :       -4.8825571563
+   Flux CH4        :       -0.0129586847
+   Flux OM         :      -27.8076415817
+     =============================================
+         Vertical integrated secondary redox-rates
+ RNHOX                 :        39.8250961038
+ RSOX                  :         0.7253778624
+ RMNOX                 :         0.0000000000
+ RFEOX                 :       204.5898603872
+ RMNFE                 :         0.4046785022
+ RFENO3                :         0.0000000000
+ RMNO2TS               :         0.0083645814
+ RCH4OX                :         5.5781901146
+ RCH4SO4               :       362.8215229517
+ RNO3TS                :         0.0000000000
+ RTSFE3                :      2348.2275509472
+ RFESOX                :         3.2767890554
+ RFESFE3               :         0.0000000000
+ RFESMN4               :         0.0000000000
+ RMnNO3                :         0.0000000000
+     =============================================
+             Vertical integrated equilibrium rates
+  RDCO2                :         0.0000000000
+  RDHCO3               :         2.0000000000
+  RDCO3                : ********************
+     =============================================
+     =============================================
+         Results from Corg-mass conservation check
+ Flux in (fg0+fg1+fg2) :         0.0000000000
+ Flux out (burial)     :        27.8076415817
+ Flux through reac     :     18288.6209655852
+ O2-POC-flux           :        43.0745888173
+ NO-POC-flux           :         0.0001824875
+ Mn-POC-flux           :         0.0397949454
+ Fe-POC-flux           :       463.2823188615
+ SO-POC-flux           :     16983.6395165014
+ CH-POC-flux           :       798.5845639722
+ Corgrate              :     18302.6583482825
+     =============================================
+   Definition of the fluxes: out of sediment (-) into it (+)
+      Units: [umol/cm2/y]
+   Flux O2         :      218.4383732680
+   Flux O2 Theory  :      273.2752346128
+   Flux NO3        :       -0.0000002640
+   Flux SO4        :       70.3895668864
+   Flux PO4        :      -20.9867919742
+   Flux PO4 Theory :     -172.6665881913
+   Flux NH4        :     -594.0813924726
+   Flux MnII       :       -2.8588921283
+   Flux FeII       :      -56.9075510516
+   Flux CH4        :       -0.3441467051
+     =============================================
+     Fluxes at the bottom:                        
+   Flux O2         :        0.0000000000
+   Flux NO3        :        0.0000000000
+   Flux SO4        :      -13.4565619852
+   Flux PO4        :       -0.4162468465
+   Flux NH4        :      -13.0691287506
+   Flux MnII       :       -0.0921104634
+   Flux FeII       :       -4.8825571563
+   Flux CH4        :       -0.0129586847
+   Flux OM         :      -27.8076415817
+     =============================================
+         Vertical integrated secondary redox-rates
+ RNHOX                 :        39.8250961038
+ RSOX                  :         0.7253778624
+ RMNOX                 :         0.0000000000
+ RFEOX                 :       204.5898603872
+ RMNFE                 :         0.4046785022
+ RFENO3                :         0.0000000000
+ RMNO2TS               :         0.0083645814
+ RCH4OX                :         5.5781901146
+ RCH4SO4               :       362.8215229517
+ RNO3TS                :         0.0000000000
+ RTSFE3                :      2348.2275509472
+ RFESOX                :         3.2767890554
+ RFESFE3               :         0.0000000000
+ RFESMN4               :         0.0000000000
+ RMnNO3                :         0.0000000000
+     =============================================
+             Vertical integrated equilibrium rates
+  RDCO2                :         0.0000000000
+  RDHCO3               :         2.0000000000
+  RDCO3                : ********************
+     =============================================
+     =============================================
+         Results from Corg-mass conservation check
+ Flux in (fg0+fg1+fg2) :         0.0000000000
+ Flux out (burial)     :        27.8076415817
+ Flux through reac     :     18288.6209655852
+ O2-POC-flux           :        43.0745888173
+ NO-POC-flux           :         0.0001824875
+ Mn-POC-flux           :         0.0397949454
+ Fe-POC-flux           :       463.2823188615
+ SO-POC-flux           :     16983.6395165014
+ CH-POC-flux           :       798.5845639722
+ Corgrate              :     18302.6583482825
+     =============================================
+   Definition of the fluxes: out of sediment (-) into it (+)
+      Units: [umol/cm2/y]
+   Flux O2         :      218.4383732680
+   Flux O2 Theory  :      273.2752346128
+   Flux NO3        :       -0.0000002640
+   Flux SO4        :       70.3895668864
+   Flux PO4        :      -20.9867919742
+   Flux PO4 Theory :     -172.6665881913
+   Flux NH4        :     -594.0813924726
+   Flux MnII       :       -2.8588921283
+   Flux FeII       :      -56.9075510516
+   Flux CH4        :       -0.3441467051
+     =============================================
+     Fluxes at the bottom:                        
+   Flux O2         :        0.0000000000
+   Flux NO3        :        0.0000000000
+   Flux SO4        :      -13.4565619852
+   Flux PO4        :       -0.4162468465
+   Flux NH4        :      -13.0691287506
+   Flux MnII       :       -0.0921104634
+   Flux FeII       :       -4.8825571563
+   Flux CH4        :       -0.0129586847
+   Flux OM         :      -27.8076415817
+     =============================================
+         Vertical integrated secondary redox-rates
+ RNHOX                 :        39.8250961038
+ RSOX                  :         0.7253778624
+ RMNOX                 :         0.0000000000
+ RFEOX                 :       204.5898603872
+ RMNFE                 :         0.4046785022
+ RFENO3                :         0.0000000000
+ RMNO2TS               :         0.0083645814
+ RCH4OX                :         5.5781901146
+ RCH4SO4               :       362.8215229517
+ RNO3TS                :         0.0000000000
+ RTSFE3                :      2348.2275509472
+ RFESOX                :         3.2767890554
+ RFESFE3               :         0.0000000000
+ RFESMN4               :         0.0000000000
+ RMnNO3                :         0.0000000000
+     =============================================
+             Vertical integrated equilibrium rates
+  RDCO2                :         0.0000000000
+  RDHCO3               :         2.0000000000
+  RDCO3                : ********************
+     =============================================
