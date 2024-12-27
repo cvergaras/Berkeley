@@ -1,0 +1,150 @@
+&glm_setup
+   sim_name = 'BerkeleyPit'
+   max_layers = 500
+   min_layer_vol = 1
+   min_layer_thick = 1
+   max_layer_thick = 1.5
+   non_avg = .true.
+/
+!&wq_setup
+!   wq_lib = 'aed'
+!   wq_nml_file = 'aed/aed_test2.nml'
+!   ode_method = 1
+!   split_factor = 1
+!   bioshade_feedback = .true.
+!   repair_state = .true.
+!/
+&light
+   light_mode = 0
+   n_bands = 4
+   light_extc = 1, 0.5, 2, 4
+   energy_frac = 0.51, 0.45, 0.035, 0.005
+   Benthic_Imin = 10
+   Kw = 0.5
+/
+&mixing
+   coef_mix_conv = 0.2
+   coef_wind_stir = 0.23
+   coef_mix_shear = 0.3
+   coef_mix_turb = 0.51
+   coef_mix_KH = 0.3
+   coef_mix_hyp = 0.5
+   deep_mixing = .true.
+   coef_mix_shreq = 0
+/
+&morphometry
+   lake_name = 'BerkeleyPit'
+   latitude = 46.02
+   longitude = -112.51
+   bsn_len = 711.699
+   bsn_wid = 226.03
+   bsn_vals = 9
+   H = 1316.736, 1341.12, 1371.6, 1402.08, 1432.56, 1463.04, 1493.52, 1621.536, 1670.304
+   A = 4294, 67129, 123015, 278704, 386370, 427650, 501189, 1710059, 1985720
+   /
+&time
+   timefmt = 2
+   start = '1991-05-01 00:00:00'
+   stop = '1998-05-01 00:00:00'
+   dt = 3600
+   num_days = 1
+   timezone = -7
+/
+&output
+   out_dir = 'output'
+   out_fn = 'output'
+   nsave = 24
+   csv_lake_fname = 'lake'
+   ! Depth specific outputs
+   csv_point_nlevs = 1
+   csv_point_fname = 'WQ_'
+   csv_point_at = 2.
+   csv_point_nvars = 3
+   csv_point_vars = 'temp',
+                    'salt',
+                    'PHQ_CO_Fe_di'
+
+/
+&init_profiles
+   num_depths = 11
+   lake_depth = 205.3
+   the_depths = 0.1, 6.1, 12.2, 42.7, 73.2, 85.3, 91.44, 121.92, 152.4, 182.88, 201.2
+   the_temps = 15, 6, 6, 5.9, 5.9, 6.0, 6.1, 7.4, 7.3, 7.8, 7.7
+   the_sals = 0,0,0,0,0,0,0,0,0,0,0!4595.2, 4576, 5184, 5248, 5312, 5344, 5344, 5363.2, 5363.2, 5376, 5408
+   num_wq_vars = 0
+   wq_names = 'OXY_oxy','NIT_amm','NIT_nit','PHS_frp','OGM_doc','PHQ_CO_H2O'
+   wq_init_vals = 359.1481, 370.4191, 373.3269, 373.455, 351.2606, 341.9009, 340.3638, 360.9128, 369.3069, 397.7706, 378.5396, 378.5887, 134.808, 15.6059, 8.509375, 4.36468, 3.5225, 215.0834, 279.5306, 291.72187, 293.40718, 294.77, 95.6459, 295.7434, 296.3697, 296.7306, 296.4591, 295.5828, 291.5922, 0.388, 0.39, 0.395, 0.4, 0.42, 0.44345, 0.46, 0.48, 0.5, 0.525, 0.55, 0.5543, 0.6, 0.7, 0.9, 1.164, 1.5, 2, 2.3, 2.7161, 2.85, 3, 3.5, 4.2, 4.2, 4.3, 4.4, 4.54545, 4.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 0.055, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24,2,3,4,5,6,7,8,9,10,11,12,11,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2
+   snow_thickness = 0
+   white_ice_thickness = 0
+   blue_ice_thickness = 0
+   avg_surf_temp = 6
+/
+&meteorology
+   met_sw = .true.
+   lw_type = 'LW_IN'
+   rain_sw = .false.
+   atm_stab = 0
+   catchrain = .false.
+   rad_mode = 1
+   albedo_mode = 4
+   cloud_mode = 4
+   meteo_fl = 'inputs/met_berkeley_v3.csv'
+   subdaily = .true.
+   wind_factor = 1
+   sw_factor = 1
+   lw_factor = 0.8874163
+   at_factor = 1
+   rh_factor = 1
+   rain_factor = 1
+   cd = 0.0013
+   ce = 0.0013
+   ch = 0.0013
+   rain_threshold = 0.04
+   runoff_coef = 0.2
+   time_fmt = 'YYYY-MM-DD hh:mm:ss'
+/
+&inflow
+   num_inflows = 0
+   names_of_strms = 'weir','SSS'
+   subm_flag = .false., .true.
+   strm_hf_angle = 55, -15
+   strmbd_slope = 0.05, 15
+   inflow_factor = 1, 0.3
+   strmbd_drag = 0.03, 0.03
+   subm_elev = 7.166530546, 1.022787437
+   inflow_fl = 'inputs/FCR_weir_inflow_2013_2020_20220411_allfractions_2poolsDOC_1dot5xDOCr.csv','inputs/FCR_SSS_inflow_2013_2021_20220411_allfractions_2DOCpools.csv'
+  ! inflow_fl = 'inputs/FCR_weir_inflow_2013_2020_20220428_allfractions_2poolsDOC_merged.csv','inputs/FCR_SSS_inflow_2013_2021_20220411_allfractions_2DOCpools.csv'
+   inflow_varnum = 37
+   inflow_vars = 'FLOW','TEMP','SALT','TRC_tr1','TRC_age','NCS_ss1','NCS_ss2','OXY_oxy','CAR_dic','CAR_pH','CAR_ch4','CAR_ch4_bub','SIL_rsi','NIT_amm','NIT_nit','PHS_frp','PHS_frp_ads','OGM_doc','OGM_poc','OGM_don','OGM_pon','OGM_dop','OGM_pop','OGM_docr','OGM_donr','OGM_dopr','OGM_cpom','PHY_cyano','PHY_cyano_IN','PHY_cyano_IP','PHY_green','PHY_green_IN','PHY_green_IP','PHY_diatom','PHY_diatom_IN','PHY_diatom_IP','BIV_filtfrac'
+/
+&outflow
+   num_outlet = 0
+   flt_off_sw = .false.
+   outl_elvs = 506.9
+   bsn_len_outl = 711.699
+   bsn_wid_outl = 226.03
+   outflow_fl = 'inputs/FCR_spillway_outflow_WeirOnly_2013_2020_20211102.csv'
+   outflow_factor = 1
+/
+&snowice
+   snow_albedo_factor = 0.8
+   snow_rho_max = 300
+   snow_rho_min = 50
+   min_ice_thickness = 0.001
+   dt_iceon_avg = 0.01
+   avg_surf_temp_thres = 0.5
+/
+&sediment
+   benthic_mode = 2
+   n_zones = 4
+   zone_heights = 3, 5, 7, 9.5
+   sed_heat_model = 1
+   sed_heat_Ksoil = 1.2, 1.2, 1.2, 1.2
+   sed_temp_depth = 0.5, 0.5, 0.5, 0.5
+   sed_temp_mean = 12, 12, 12, 20          ! 12.46962553, 15.75549561, 21.89313606
+   sed_temp_amplitude = 3, 3, 3, 5,        !  2.767260656, 3.993449873, 5.232029619
+   sed_temp_peak_doy = 278, 270, 266, 266  !277.6839306, 264.6064025, 266.8919938
+  ! sed_temp_mean = 11.39072901, 14.85279613, 14.85279613
+  ! sed_temp_amplitude = 3.993449873, 3.993449873, 5.232029619
+  ! sed_temp_peak_doy = 277.6839306, 264.6064025, 266.8919938
+/
