@@ -1,0 +1,79 @@
+ERROR: LoadDatabase: Unable to open:"pht3d_datab.dat".
+
+ERROR: LoadDatabase: Unable to open:"pht3d_datab.dat".
+
+ERROR: LoadDatabase: Unable to open:"pht3d_datab.dat".
+
+ERROR: PhreeqcRM failed.
+ERROR: PhreeqcRM::LoadDatabase
+
+
+ERROR: RunFile: No database is loaded
+
+ERROR: RunFile: No database is loaded
+
+ERROR: RunFile: No database is loaded
+
+ERROR: PhreeqcRM failed.
+ERROR: PhreeqcRM::RunFile
+
+
+ERROR: ERROR: RunString: No database is loaded
+
+ERROR: ERROR: RunString: No database is loaded
+
+ERROR: RunString: No database is loaded
+
+ERROR: RunString: No database is loaded
+
+ERROR: PhreeqcRM failed.
+ERROR: PhreeqcRM::RunString
+
+
+ERROR: ERROR: RunString: No database is loaded
+
+ERROR: PhreeqcRM failed.
+ERROR: PhreeqcRM::FindComponents
+
+
+ERROR: Initial condition EQUILIBRIUM_PHASES 1 not found.
+Initial condition SOLUTION 1 not found.
+Initial condition EQUILIBRIUM_PHASES 2 not found.
+Initial condition SOLUTION 2 not found.
+Initial condition EQUILIBRIUM_PHASES 3 not found.
+Initial condition SOLUTION 3 not found.
+Initial condition EQUILIBRIUM_PHASES 4 not found.
+Initial condition SOLUTION 4 not found.
+Initial condition EQUILIBRIUM_PHASES 5 not found.
+Initial condition SOLUTION 5 not found.
+Initial condition EQUILIBRIUM_PHASES 6 not found.
+Initial condition SOLUTION 6 not found.
+Initial condition EQUILIBRIUM_PHASES 7 not found.
+Initial condition SOLUTION 7 not found.
+Initial condition EQUILIBRIUM_PHASES 8 not found.
+Initial condition SOLUTION 8 not found.
+Initial condition EQUILIBRIUM_PHASES 9 not found.
+Initial condition SOLUTION 9 not found.
+Initial condition EQUILIBRIUM_PHASES 10 not found.
+Initial condition SOLUTION 10 not found.
+Initial condition EQUILIBRIUM_PHASES 11 not found.
+Initial condition SOLUTION 11 not found.
+Initial condition EQUILIBRIUM_PHASES 12 not found.
+Initial condition SOLUTION 12 not found.
+Initial condition EQUILIBRIUM_PHASES 13 not found.
+Initial condition SOLUTION 13 not found.
+Initial condition EQUILIBRIUM_PHASES 14 not found.
+Initial condition SOLUTION 14 not found.
+Initial condition EQUILIBRIUM_PHASES 15 not found.
+Initial condition SOLUTION 15 not found.
+Initial condition EQUILIBRIUM_PHASES 16 not found.
+Initial condition SOLUTION 16 not found.
+Initial condition EQUILIBRIUM_PHASES 17 not found.
+Initial condition SOLUTION 17 not found.
+Initial condition EQUILIBRIUM_PHASES 18 not found.
+Initial condition SOLUTION 18 not found.
+Initial condition EQUILIBRIUM_PHASES 19 not found.
+Initial condition SOLUTION 19 not found.
+Initial condition EQUILIBRIUM_PHASES 20 not found.
+Initial condition SOLUTION 20 not found.
+
