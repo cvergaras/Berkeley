@@ -1,6 +1,6 @@
 &glm_setup
    sim_name = 'BerkeleyPit'
-   max_layers = 500
+   max_layers = 1000
    min_layer_vol = 1
    min_layer_thick = 1
    max_layer_thick = 1.5
@@ -36,8 +36,8 @@
    lake_name = 'BerkeleyPit'
    latitude = 46.02
    longitude = -112.51
-   bsn_len = 711.699
-   bsn_wid = 226.03
+   bsn_len = 1900!711.699
+   bsn_wid = 1200!226.03
    bsn_vals = 37
    H = 1310, 1320, 1330, 1340, 1350, 1360, 1370, 1380, 1390, 1400, 1410,	1420,	1430,	1440,	1450,	1460,	1470,	1480,	1490,	1500,	1510,	1520,	1530,	1540,	1550,	1560,	1570,	1580,	1590,	1600,	1610,	1620,	1630,	1640,	1650,	1660,	1670
    A = 0, 4294, 35711.5, 67129, 85757.6666666667,	104386.333333333,	123015,	174911.333333333,	226807.666666667,	278704,	314592.666666667,	350481.333333333,	386370,	400130,	413890,	427650,	452163,	476676,	501189,	594179,	687169,	780159,	873149,	966139,	1059129,	1152119,	1245109,	1338099,	1431089,	1524079,	1617069,	1710059,	1765191.2,	1820323.4,	1875455.6,	1930587.8,	1985720
@@ -45,7 +45,7 @@
 &time
    timefmt = 2
    start = '1991-05-01 00:00:00'
-   stop = '2001-05-01 00:00:00'
+   stop = '2017-10-01 00:00:00'
    dt = 3600
    num_days = 1
    timezone = -7
@@ -67,7 +67,7 @@
 /
 &init_profiles
    num_depths = 34
-   lake_depth = 204
+   lake_depth = 212
    the_depths = 0.1,	6.096,	12.192,	18.288,	24.384,	30.48,	36.576,	42.672,	48.768,	54.864,	60.96,	67.056,	73.152,	79.248,	85.344,	91.44,	97.536,	103.632,	109.728,	115.824,	121.92,	128.016,	134.112,	140.208,	146.304,	152.4,	158.496,	164.592,	170.688,	176.784,	182.88,	188.976,	195.072,	201.168!
    the_temps = 15,	6,	6,	5.9,	5.9,	5.9,	5.9,	5.9,	5.9,	5.8,	5.8,	5.8,	5.9,	6,	6,	6.1,	6.4,	6.7,	7,	7.3,	7.4,	7.4,	7.4,	7.3,	7.3,	7.3,	7.4,	7.5,	7.6,	7.7,	7.8,	7.8,	7.8,	7.7!
    the_sals = 4595.2,	4576,	5184,	5248,	5248,	5248,	5248,	5248,	5248,	5280,	5280,	5296,	5312,	5312,	5344,	5344,	5344,	5344,	5344,	5344,	5363.2,	5363.2,	5363.2,	5363.2,	5363.2,	5363.2,	5363.2,	5363.2,	5363.2,	5363.2,	5376,	5376,	5376,	5408
@@ -104,18 +104,17 @@
    time_fmt = 'YYYY-MM-DD hh:mm:ss'
 /
 &inflow
-   num_inflows = 0
-   names_of_strms = 'weir','SSS'
-   subm_flag = .false., .true.
-   strm_hf_angle = 55, -15
-   strmbd_slope = 0.05, 15
-   inflow_factor = 1, 0.3
-   strmbd_drag = 0.03, 0.03
-   subm_elev = 7.166530546, 1.022787437
-   inflow_fl = 'inputs/FCR_weir_inflow_2013_2020_20220411_allfractions_2poolsDOC_1dot5xDOCr.csv','inputs/FCR_SSS_inflow_2013_2021_20220411_allfractions_2DOCpools.csv'
-  ! inflow_fl = 'inputs/FCR_weir_inflow_2013_2020_20220428_allfractions_2poolsDOC_merged.csv','inputs/FCR_SSS_inflow_2013_2021_20220411_allfractions_2DOCpools.csv'
-   inflow_varnum = 37
-   inflow_vars = 'FLOW','TEMP','SALT','TRC_tr1','TRC_age','NCS_ss1','NCS_ss2','OXY_oxy','CAR_dic','CAR_pH','CAR_ch4','CAR_ch4_bub','SIL_rsi','NIT_amm','NIT_nit','PHS_frp','PHS_frp_ads','OGM_doc','OGM_poc','OGM_don','OGM_pon','OGM_dop','OGM_pop','OGM_docr','OGM_donr','OGM_dopr','OGM_cpom','PHY_cyano','PHY_cyano_IN','PHY_cyano_IP','PHY_green','PHY_green_IN','PHY_green_IP','PHY_diatom','PHY_diatom_IN','PHY_diatom_IP','BIV_filtfrac'
+   num_inflows = 5
+   names_of_strms = 'Continental','HSB','Precip_Leach','Sludge','GW'
+   subm_flag = .false.,.false.,.false.,.false., .true.
+   strm_hf_angle = 55,55,55,55,55
+   strmbd_slope = 4.5,4.5,4.5,4.5,6.3
+   inflow_factor = 0.8,0.8,0.4,0.8,0.8!1,1,1,1,1!0.000011574074,0.000011574074,0,0.000011574074,0.000011574074! (m3/d to m3/s) 1,1,1,1,1
+   strmbd_drag = 0.03, 0.03,0.03, 0.03,0.03
+   subm_elev = 200,200,200,200,20
+   inflow_fl = 'input/Continental_influx_v2.csv','input/HSB_influx_v3.csv','input/Precip_Leach_influx_v3.csv','input/Sludge_influx_v2.csv','input/GW_influx_v2.csv'
+   inflow_varnum = 2
+   inflow_vars = 'FLOW','SALT'!,'TRC_tr1','TRC_age','NCS_ss1','NCS_ss2','OXY_oxy','CAR_dic','CAR_pH','CAR_ch4','CAR_ch4_bub','SIL_rsi','NIT_amm','NIT_nit','PHS_frp','PHS_frp_ads','OGM_doc','OGM_poc','OGM_don','OGM_pon','OGM_dop','OGM_pop','OGM_docr','OGM_donr','OGM_dopr','OGM_cpom','PHY_cyano','PHY_cyano_IN','PHY_cyano_IP','PHY_green','PHY_green_IN','PHY_green_IP','PHY_diatom','PHY_diatom_IN','PHY_diatom_IP','BIV_filtfrac'
 /
 &outflow
    num_outlet = 0
